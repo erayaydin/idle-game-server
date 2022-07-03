@@ -1,0 +1,33 @@
+{
+  "overrides": [
+    {
+      "files": ["**/*.ts"],
+      "plugins": [
+        "@typescript-eslint",
+        "eslint-plugin-tsdoc",
+        "import"
+      ],
+      "extends": [
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "@typescript-eslint/comma-dangle": "off",
+        "@typescript-eslint/consistent-type-imports": "error",
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/no-dupe-class-members": "error",
+        "@typescript-eslint/no-useless-constructor": "error",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "no-console": "error",
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          { "js": "always", "jsx": "never", "ts": "never", "tsx": "never" }
+        ]
+      }
+    }
+  ]
+}

@@ -34,7 +34,8 @@
   },
   "exclude": [
     "dist",
-    "node_modules"
+    "node_modules",
+    "commitlint.config.ts"
   ],
   "include": ["src"]
 }
